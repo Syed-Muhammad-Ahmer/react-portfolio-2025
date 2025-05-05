@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import styles from './Card.module.css';
 
 const Card = ({ 
@@ -36,5 +36,19 @@ const Card = ({
     </div>
   );
 };
-
+Card.propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    technologies: PropTypes.arrayOf(PropTypes.string),
+    image: PropTypes.string,
+    link: PropTypes.string
+  };
+  
+  Card.defaultProps = {
+    title: '',
+    description: '',
+    technologies: [],
+    image: '',
+    link: ''
+  };
 export default Card;
