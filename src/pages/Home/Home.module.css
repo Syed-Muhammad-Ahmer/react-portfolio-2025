@@ -1,0 +1,112 @@
+.home {
+  display: flex;
+  min-height: calc(100vh - 120px);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.welcomeSection {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcomeSection h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.welcomeSection p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.highlightCard {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.highlightCard:hover {
+  transform: translateY(-5px);
+}
+
+.highlightCard h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 1rem;
+  }
+  
+  .welcomeSection {
+    padding: 1.5rem;
+  }
+  
+  .highlightCard {
+    padding: 1.25rem;
+  }
+  .profileImageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .profileImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ddd;
+    background-image: url('../../assets/images/profile.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--primary-color);
+    animation: pulse 2s infinite;
+  }
+  
+}
+.mobiletext {
+  display: none;
+  
+}
+
+@media (max-width: 768px) {
+  .mobiletext {
+    font-size: 1.55em;
+      display: block; /* or inline/inline-block as needed */
+      text-align: center; /* Optional: centers the text */
+      font-weight: 500;
+  }
+}
