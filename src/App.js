@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { PageTitleProvider } from './context/PageTitleContext';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         HELLO WORLD. This is Syed's First React App.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <PageTitleProvider>
+        <div className="app">
+          <Navbar />
+          <main>
+            {/* Routes and Suspense will be added in the next phase */}
+          </main>
+          <Footer />
+        </div>
+      </PageTitleProvider>
+    </Router>
   );
 }
 
