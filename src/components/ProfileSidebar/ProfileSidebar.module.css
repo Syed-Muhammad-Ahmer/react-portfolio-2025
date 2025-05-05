@@ -1,0 +1,53 @@
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    position: fixed;
+    height: 100vh;
+    transition: transform 0.3s ease;
+  }
+  
+  .profileImageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ddd;
+    background-image: url('../../assets/images/profile.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--primary-color);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(100, 108, 255, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(100, 108, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(100, 108, 255, 0);
+    }
+  }
+  .name{
+    font-size: 1.3em;
+  }
+  @media (max-width: 768px) {
+    .sidebar {
+      transform: translateX(-100%);
+      position: absolute;
+      z-index: 100;
+    }
+    
+    .sidebar.open {
+      transform: translateX(0);
+    }
+  }
