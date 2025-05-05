@@ -1,0 +1,65 @@
+:root {
+  /* Colors */
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --text-color: #213547;
+  --background-color: #ffffff;
+  --card-bg: #f9f9f9;
+  --border-color: #eaeaea;
+  --error-color: #ff3333;
+  --success-color: #28a745;
+  --success-bg: rgba(40, 167, 69, 0.1);
+  --footer-bg: #f5f5f5;
+  --footer-text: #666;
+  --table-even-bg: #f9f9f9;
+  --table-odd-bg: #ffffff;
+  --table-hover-bg: #f0f0f0;
+  --font-helvetica: Helvetica, Arial, sans-serif;
+
+  /* Dark mode variables */
+  --dark-primary-color: #61dafb;
+  --dark-primary-hover: #4fa8d3;
+  --dark-text-color: rgba(255, 255, 255, 0.87);
+  --dark-background-color: #1a1a1a;
+  --dark-card-bg: #242424;
+  --dark-border-color: #444;
+  --dark-footer-bg: #2a2a2a;
+  --dark-footer-text: #aaa;
+  --dark-table-even-bg: #2a2a2a;
+  --dark-table-odd-bg: #1f1f1f;
+  --dark-table-hover-bg: #333;
+}
+
+[data-theme="dark"] {
+  --primary-color: var(--dark-primary-color);
+  --primary-hover: var(--dark-primary-hover);
+  --text-color: var(--dark-text-color);
+  --background-color: var(--dark-background-color);
+  --card-bg: var(--dark-card-bg);
+  --border-color: var(--dark-border-color);
+  --footer-bg: var(--dark-footer-bg);
+  --footer-text: var(--dark-footer-text);
+  --table-even-bg: var(--dark-table-even-bg);
+  --table-odd-bg: var(--dark-table-odd-bg);
+  --table-hover-bg: var(--dark-table-hover-bg);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono&display=swap');
+
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Roboto Mono', monospace;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+code {
+  font-family: var(--font-secondary);
+}
