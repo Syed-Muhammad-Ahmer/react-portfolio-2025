@@ -46,3 +46,16 @@
     background-image: url('../assets/images/web-dev.jpg');
   }  */
   
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.technologies span {
+  background: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
