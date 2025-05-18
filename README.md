@@ -32,8 +32,17 @@ A modern, full-stack responsive portfolio website built with React and Node.js. 
   - Submitting contact form data
   - Retrieving project or education entries (optional if dynamic content is used)
   - Error handling and validation checks
-
-##Screenshots
+## How to Run!
+- First start backend by typing commands in terminal:
+    - cd backend
+    - npm run dev
+- You will be prompted mongodb connected means backend is working now
+- Next to run front end type in a new terminal:
+    - cd my-react-app
+    - npm start
+- And Now you are good to go. 
+- Any Suggestions will be warmly welcomed :)       
+## Screenshots
 ![image](https://github.com/user-attachments/assets/b64ffc81-ebf1-4645-9a41-57b935e5134a)
 ![image](https://github.com/user-attachments/assets/63198557-e8a6-4ba1-8cbd-f0dc35759d3e)
 ![image](https://github.com/user-attachments/assets/fa11bdf3-13c4-4758-b3c0-e2f0d67236f2)
